@@ -81,12 +81,12 @@
 
         default_layer {
             bindings = <
-&lt 3 ESCAPE      &kp N1  &kp N2  &kp N3   &kp N4          &kp N5          &kp N6        &kp N7         &kp N8      &kp N9   &kp N0    &kp GRAVE
-&kp TAB           &kp Q   &kp W   &kp E    &kp R           &kp T           &kp Y         &kp U          &kp I       &kp O    &kp P     &kp MINUS
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D    &kp F           &kp G           &kp H         &kp J          &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z   &kp X   &kp C    &kp V           &kp B           &kp N         &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp BSLH
-                                  &kp TAB  &kp LEFT_SHIFT  &kp SPACE       &kp ENTER     &kp BACKSPACE  &kp DELETE
-                                           &kp LEFT_GUI    &lt 1 ESCAPE    &lt 2 ESCAPE  &kp LEFT_ALT
+&lt 3 ESCAPE      &kp N1  &kp N2  &kp N3   &kp N4                  &kp N5            &kp N6         &kp N7                  &kp N8      &kp N9   &kp N0    &kp GRAVE
+&kp TAB           &kp Q   &kp W   &kp E    &kp R                   &kp T             &kp Y          &kp U                   &kp I       &kp O    &kp P     &kp MINUS
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D    &kp F                   &kp G             &kp H          &kp J                   &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp Z   &kp X   &kp C    &kp V                   &kp B             &kp N          &kp M                   &kp COMMA   &kp DOT  &kp FSLH  &kp BSLH
+                                  &kp TAB  &mt LEFT_CONTROL SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mt LEFT_CONTROL ENTER  &kp DELETE
+                                           &kp LEFT_GUI            &lt 1 ESCAPE      &lt 2 ESCAPE   &kp LEFT_ALT
             >;
         };
 
@@ -103,12 +103,12 @@
 
         raise_layer {
             bindings = <
-&kp F12  &kp F1     &kp F2           &kp F3           &kp F4           &kp F5             &kp F6          &kp F7         &kp F8        &kp F9        &kp F10  &kp F11
-&none    &kp CAPS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END       &none    &kp C_MUTE
-&none    &kp LCTRL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT         &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT     &none    &kp C_VOL_UP
-&none    &kp DEL    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AT_SIGN        &kp LCTRL       &kp LEFT_ALT   &kp TAB       &kp LEFT_GUI  &none    &kp C_VOL_DN
-                                     &trans           &trans           &trans             &trans          &trans         &trans
-                                                      &trans           &trans             &trans          &trans
+&kp F12  &kp F1     &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7         &kp F8        &kp F9        &kp F10  &kp F11
+&none    &kp CAPS   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END       &none    &kp C_MUTE
+&none    &kp LCTRL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOT         &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT     &none    &kp C_VOL_UP
+&none    &kp DEL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AT_SIGN     &kp LCTRL       &kp LEFT_ALT   &kp TAB       &kp LEFT_GUI  &none    &kp C_VOL_DN
+                                  &trans        &trans        &trans          &trans          &trans         &trans
+                                                &trans        &trans          &trans          &trans
             >;
         };
 
@@ -116,8 +116,8 @@
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &none  &bt BT_CLR    &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &bt BT_CLR
-&none  &none         &none         &none         &soft_off     &out OUT_TOG    &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &out OUT_TOG    &none  &none  &none  &none  &none  &none
                                    &none         &none         &none           &none  &none  &none
                                                  &none         &none           &none
             >;
